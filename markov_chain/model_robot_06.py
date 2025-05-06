@@ -24,8 +24,8 @@ start = Categorical([[
 
 # Modelo de transicion
 transitions = ConditionalCategorical([[
-    [1/5, 2/5, 0, 2/5, 0, 0],
-    [2/5, 1/5, 2/5, 0, 0, 0],
+    [1/5, 2/5, 0, 2/5, 0, 0], #probabilidad de pasar de la habitacion 1 a la 1, de la 1 a la 2, de la 1 a la 3, de la 1 a la 4...
+    [2/5, 1/5, 2/5, 0, 0, 0], #probabilidad de pasar de la habitacion 2 a la 1, de la 2 a la 2...
     [0, 2/5, 1/5, 0, 0, 2/5],
     [2/5, 0, 0, 1/5, 2/5, 0],
     [0, 0, 0, 4/5, 1/5, 0],
